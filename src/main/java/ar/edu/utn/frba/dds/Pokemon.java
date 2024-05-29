@@ -1,13 +1,18 @@
 package ar.edu.utn.frba.dds;
 
+import java.util.List;
+
 public class Pokemon {
+        public int id;
         public String name;
-        public String url;
-        //public Image imagen;
-        //public List<Movimiento> movimientos;
-        //public boolean puedeHacer(Movimiento movimiento) {}
-        
+        public String image;
+
+        public List <MovimientoAprendido> moves;
+
         public String getName(){ return name; }
-        public String getUrl(){ return url; }
-        //public void obtenerImagen() {}
+        public int getId(){ return id; }
+
+        public void setImage(String URL){
+                this.image = URL;
+        }
 }
